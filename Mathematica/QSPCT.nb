@@ -1,0 +1,138 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4042,        130]
+NotebookOptionsPosition[      3734,        114]
+NotebookOutlinePosition[      4072,        129]
+CellTagsIndexPosition[      4029,        126]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lowerbound", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"upperbound", "=", "10000000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"err", "=", 
+   FractionBox[
+    SuperscriptBox["10", 
+     RowBox[{"-", "3"}]], "16"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"alpha", "=", 
+   RowBox[{"4", "*", "n"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", "n"}], ";"}], "\n", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"q", "=", "lowerbound"}], ",", 
+   RowBox[{"q", "<", "upperbound"}], ",", 
+   RowBox[{"q", "=", 
+    RowBox[{"q", "*", "2"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"tmp", "=", 
+     FractionBox[
+      RowBox[{"4", "*", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"alpha", "*", "t"}], ")"}], "q"]}], 
+      RowBox[{
+       SuperscriptBox["2", "q"], "*", 
+       RowBox[{"Factorial", "[", "q", "]"}]}]]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"tmp", "<", "err"}], ",", 
+      RowBox[{"Break", "[", "]"}], ",", 
+      RowBox[{"Unevaluated", "[", 
+       RowBox[{"Sequence", "[", "]"}], "]"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"left", "=", 
+   FractionBox["q", "2"]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"right", "=", "q"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{"left", "<", 
+    RowBox[{"right", "-", "1"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"mid", "=", 
+     RowBox[{"Ceiling", "[", 
+      RowBox[{"left", "+", 
+       FractionBox[
+        RowBox[{"right", "-", "left"}], "2"]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"tmp", "=", 
+     FractionBox[
+      RowBox[{"4", "*", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"alpha", "*", "t"}], ")"}], "mid"]}], 
+      RowBox[{
+       SuperscriptBox["2", "mid"], "*", 
+       RowBox[{"Factorial", "[", "mid", "]"}]}]]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"tmp", "<", "err"}], ",", 
+      RowBox[{
+       RowBox[{"right", "=", "mid"}], ";"}], ",", 
+      RowBox[{"left", "=", 
+       RowBox[{"mid", "+", "1"}]}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"q", "=", "right"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NN", "=", 
+  RowBox[{"2", "*", 
+   RowBox[{"(", 
+    RowBox[{"q", "-", "1"}], ")"}]}]}]}], "Input",
+ CellChangeTimes->{{3.697937339624714*^9, 3.6979373655471964`*^9}, 
+   3.699315191169927*^9, {3.69931539035632*^9, 3.6993154182859173`*^9}, {
+   3.704457330112228*^9, 3.7044573310647383`*^9}, {3.7044573671747513`*^9, 
+   3.704457451445907*^9}, {3.705407920395005*^9, 3.7054080045289793`*^9}}],
+
+Cell[BoxData["108740"], "Output",
+ CellChangeTimes->{
+  3.697937379192977*^9, {3.699315185004575*^9, 3.699315193244046*^9}, {
+   3.6993154060612183`*^9, 3.6993154212450867`*^9}, {3.704457371095152*^9, 
+   3.704457454879809*^9}, {3.7054079241277122`*^9, 3.70540800835256*^9}}]
+}, Open  ]]
+},
+WindowSize->{960, 1028},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2860, 83, 605, "Input"],
+Cell[3443, 107, 275, 4, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+

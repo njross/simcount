@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1710,         61]
+NotebookOptionsPosition[      1369,         44]
+NotebookOutlinePosition[      1707,         59]
+CellTagsIndexPosition[      1664,         56]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"r", "=", 
+  RowBox[{"Ceiling", "[", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{"-", "0.578253417218168"}], "]"}], "*", 
+    SuperscriptBox["n", "2.146489419984696"]}], "]"}]}]}], "Input",
+ CellChangeTimes->{
+  3.699833123979844*^9, {3.6998332116508584`*^9, 3.699833212084883*^9}, {
+   3.69983325643542*^9, 3.699833271361274*^9}, {3.7054073813782263`*^9, 
+   3.705407419339939*^9}, {3.705407467368227*^9, 3.705407562609776*^9}}],
+
+Cell[BoxData["11012"], "Output",
+ CellChangeTimes->{{3.705407384582028*^9, 3.70540742214585*^9}, {
+  3.705407470820136*^9, 3.705407565206813*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.70540742478823*^9, 3.705407427326519*^9}}]
+},
+WindowSize->{960, 1028},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 530, 12, 64, "Input"],
+Cell[1113, 36, 146, 2, 32, "Output"]
+}, Open  ]],
+Cell[1274, 41, 91, 1, 32, "Input"]
+}
+]
+*)
+

@@ -1,0 +1,71 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1909,         63]
+NotebookOptionsPosition[      1604,         47]
+NotebookOutlinePosition[      1942,         62]
+CellTagsIndexPosition[      1899,         59]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"r", "=", 
+  RowBox[{"Ceiling", "[", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{"-", "0.503234934750193"}], "]"}], "*", 
+    SuperscriptBox["n", "2.137595487818413"]}], "]"}]}]}], "Input",
+ CellChangeTimes->{
+  3.699833123979844*^9, {3.6998332116508584`*^9, 3.699833212084883*^9}, {
+   3.69983325643542*^9, 3.699833271361274*^9}, {3.7012841812137012`*^9, 
+   3.7012841973826265`*^9}, {3.704462989158947*^9, 3.704462989257491*^9}, {
+   3.704463029940198*^9, 3.704463031031959*^9}, {3.704463061732613*^9, 
+   3.7044630627548018`*^9}, {3.7044630981336*^9, 3.704463153735013*^9}, {
+   3.704463183916349*^9, 3.704463267875094*^9}, {3.705411614156969*^9, 
+   3.705411710854534*^9}}],
+
+Cell[BoxData["11394"], "Output",
+ CellChangeTimes->{
+  3.7044629953739634`*^9, 3.7044630338985977`*^9, 3.704463066076311*^9, {
+   3.7044631014017677`*^9, 3.704463271076985*^9}, {3.705411617771349*^9, 
+   3.705411713473735*^9}}]
+}, Open  ]]
+},
+WindowSize->{960, 1028},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 778, 16, 64, "Input"],
+Cell[1361, 40, 227, 4, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+

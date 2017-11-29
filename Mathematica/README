@@ -1,0 +1,52 @@
+To generate the QSP parameters.
+
+======================================================================
+Over the Clifford+Rz basis
+
+* For QSP: use QSPCZ.nb. To compute the number of phases required by
+  the algorithm choose a value of n (the system size) and evaluate the
+  notebook (change the values of lowerbound and upperbound to gain
+  efficiency).
+
+* For QSPJA: use QSPJACZ.nb. To compute the number of phases required
+  by the algorithm choose a value of n (the system size) and evaluate
+  the notebook.
+
+* QSPsegment: use QSPSegmentCZ.nb and QSPAnglesCZ.nb. In
+  QSPSegmentCZ.nb choose n (the system size) and evaluate the notebook
+  to get the number of segments. Then set n (the system size), alpha
+  (the sum of the absolute value of the coefficients), and seg (the
+  number of segments) in QSPAngles.nb and evaluate to obtain the list
+  of angles.
+
+* QSPsegmentfit: use QSPSegmentfitCZ.nb and QSPAnglesCZ.nb. In
+  QSPSegmentfitCZ.nb set n (the system size) and evaluate the notebook
+  to get the number of segments. Then set n (the system size), alpha
+  (the sum of the absolute value of the coefficients), and seg (the
+  number of segments) in QSPAngles.nb and evaluate to obtain the list
+  of angles.
+
+======================================================================
+Over the Clifford+T basis
+
+* For QSP: use QSPCT.nb. To compute the number of phases required by
+  the algorithm choose a value of n (the system size) and evaluate the
+  notebook (change the values of lowerbound and upperbound to gain
+  efficiency).
+  
+* For QSPJA: use QSPJACT.nb. To compute the number of phases required
+  by the algorithm choose a value of n (the system size) and evaluate
+  the notebook.
+
+* QSPsegment: use QSPSegmentCT.nb and QSPAngles.nb. In QSPSegmentCT.nb
+  choose n (the system size) and evaluate the notebook to get the
+  number of segments. Then set n (the system size), alpha (the sum of
+  the absolute value of the coefficients), and seg (the number of
+  segments) in QSPAngles.nb and evaluate to obtain the list of angles.
+
+* QSPsegmentfit: use QSPSegmentfitCT.nb and QSPAngles.nb. In
+  QSPSegmentfitCT.nb set n (the system size) and evaluate the notebook
+  to get the number of segments. Then set n (the system size), alpha
+  (the sum of the absolute value of the coefficients), and seg (the
+  number of segments) in QSPAngles.nb and evaluate to obtain the list
+  of angles.
