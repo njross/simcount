@@ -18,9 +18,8 @@ original references can be found in the following paper.
 
 ## License
 
-* The code is released under the Apache License. See the
-  [LICENSE](https://github.com/njross/simcount/LICENSE) file for more
-  information.
+* The code is released under the Apache License. See the LICENSE and
+  NOTICE files for more information.
 
 ## Build
 
@@ -70,8 +69,8 @@ qspsegmentemp, then n must be one of 13, 16, 20, 25, 32, 40, 42, 44,
 46, 48 50, 52, 54, 56, 58, 63, 79, or 100. Circuits for other system
 sizes using the latter algorithms can be obtained by computing the
 relevant parameters and adding them to the Parameters.hs module. This
-can be done using the Mathematica notebooks provided in the folder
-[Mathematica](https://github.com/njross/simcount/Mathematica/).
+can be done using the Mathematica notebooks provided in the
+Mathematica folder.
 
 Usage examples:
 
@@ -101,11 +100,10 @@ Usage examples:
 
 ## Samples
 
-The compressed folder
-[Samples.tar.gz](https://github.com/njross/simcount/Samples.tar.gz)
-contains sample circuits for the simulation of Hamiltonian dynamics
-before and after optimization. The optimizations were carried out
-using the techniques detailed in the following paper.
+The compressed folder Samples contains sample circuits for the
+simulation of Hamiltonian dynamics before and after optimization. The
+optimizations were carried out using the techniques detailed in the
+following paper.
 
 * Yunseong Nam, Neil J. Ross, Yuan Su, Andrew M. Childs, and Dmitri
   Maslov. Automated optimization of large quantum circuits with
