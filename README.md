@@ -100,7 +100,7 @@ Usage examples:
 
 ## Samples
 
-The compressed folder Samples contains sample circuits for the
+The compressed folder samples.tar.gz contains sample circuits for the
 simulation of Hamiltonian dynamics before and after optimization. The
 optimizations were carried out using the techniques detailed in the
 following paper.
