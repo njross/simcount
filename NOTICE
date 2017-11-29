@@ -2,3 +2,10 @@
 
 The first release of simcount was developed by Andrew M. Childs,
 Dmitri Maslov, Yunseong Nam, Neil J. Ross, and Yuan Su in 2017.
+
+The quantum algorithm implementations contained in this repository are
+described in detail in the paper
+
+* Andrew M. Childs, Dmitri Maslov, Yunseong Nam, Neil J. Ross, and
+  Yuan Su. Toward the first quantum simulation with quantum
+  speedup. (2017).
