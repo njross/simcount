@@ -14,7 +14,8 @@ original references can be found in the following paper.
 
 * Andrew M. Childs, Dmitri Maslov, Yunseong Nam, Neil J. Ross, and
   Yuan Su. Toward the first quantum simulation with quantum
-  speedup. (2017).
+  speedup. November 2017. Available from
+  https://arxiv.org/abs/1711.10980.
 
 ## License
 
