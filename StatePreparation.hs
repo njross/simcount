@@ -238,18 +238,20 @@ unprepare_state_at as = box "UnprepA" $ \qs -> do
 --
 -- Precondition: |as| = 2^|qs|.
 prepare_state :: [Double] -> [Qubit] -> Circ [Qubit]
-prepare_state as qs = do
+prepare_state as = box "PrepA_at" $ \qs -> do
+  comment_with_label "ENTER: prepare_state" qs "q"  
   qs <- reverse_generic_endo (unprepare_state as) qs  
+  comment_with_label "EXIT: prepare_state" qs "q"  
   return qs
 
 -- An imperative-style and boxed version of prepare_state.
 --
 -- Precondition: |as| = 2^|qs|.
 prepare_state_at :: [Double] -> [Qubit] -> Circ ()
-prepare_state_at as = box "PrepA" $ \qs -> do
-  comment_with_label "ENTER: prepare_state" qs "q"
+prepare_state_at as = box "PrepA_at" $ \qs -> do
+  comment_with_label "ENTER: prepare_state_at" qs "q"
   qs <- prepare_state as qs  
-  comment_with_label "EXIT: prepare_state" qs "q"
+  comment_with_label "EXIT: prepare_state_at" qs "q"
   return ()
 
 -- ===================================================================
@@ -308,8 +310,8 @@ prepare_t bs = box "PrepT" $ \qs -> do
 
 -- An imperative-style and boxed version of prepare_t.
 prepare_t_at :: [Double] -> [Qubit] -> Circ ()
-prepare_t_at as = box "PrepA" $ \qs -> do
-  comment_with_label "ENTER: prepare_t" qs "q"
+prepare_t_at as = box "PrepT_at" $ \qs -> do
+  comment_with_label "ENTER: prepare_t_at" qs "q"
   qs <- prepare_t as qs  
-  comment_with_label "EXIT: prepare_t" qs "q"
+  comment_with_label "EXIT: prepare_t_at" qs "q"
   return ()
