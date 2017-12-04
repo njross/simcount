@@ -227,7 +227,7 @@ unprepare_state as qs = do
 --
 -- Precondition: |as| = 2^|qs|.
 unprepare_state_at :: [Double] -> [Qubit] -> Circ ()
-unprepare_state_at as = box "UnprepA" $ \qs -> do
+unprepare_state_at as = box "UnprepA_at" $ \qs -> do
   comment_with_label "ENTER: unprepare_state" qs "q"
   qs <- unprepare_state as qs  
   comment_with_label "EXIT: unprepare_state" qs "q"
@@ -238,7 +238,7 @@ unprepare_state_at as = box "UnprepA" $ \qs -> do
 --
 -- Precondition: |as| = 2^|qs|.
 prepare_state :: [Double] -> [Qubit] -> Circ [Qubit]
-prepare_state as = box "PrepA_at" $ \qs -> do
+prepare_state as = box "PrepA" $ \qs -> do
   comment_with_label "ENTER: prepare_state" qs "q"  
   qs <- reverse_generic_endo (unprepare_state as) qs  
   comment_with_label "EXIT: prepare_state" qs "q"  
