@@ -15,9 +15,9 @@
 module Main where
 
 import Quipper
-import QuipperLib.Decompose
-import Libraries.CommandLine
-import Libraries.RandomSource
+import Quipper.Libraries.Decompose
+import Quipper.Utils.CommandLine
+import Quipper.Utils.RandomSource
 
 import System.Console.GetOpt
 import System.Environment    

@@ -19,8 +19,8 @@ module Parameters where
 import Quipper
 
 import System.Random
-import Libraries.RandomSource
-import Libraries.Sampling
+import Quipper.Utils.RandomSource
+import Quipper.Utils.Sampling
 
 import Definitions
 

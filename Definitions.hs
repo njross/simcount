@@ -10,7 +10,7 @@
 module Definitions where
 
 import Quipper
-import Libraries.Sampling
+import Quipper.Utils.Sampling
 
 import System.Random
 import Control.Monad
